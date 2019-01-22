@@ -1,108 +1,114 @@
 <html>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <div id="wrapper">
-  <header><title> Kevin Topper</title></header>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <h1>
-      Kevin Topper
-    </h1>
-    <button class="jason"> Go Bills </button>
-    <button class="hammer"> Bills Stink </button>
-    <div id = "img">
-      <img src="bills.png" style="width:60%;">
-    </div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div id="wrapper">
+  <header>
+    <title> Kevin Topper</title>
+  </header>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <h1>
+    Kevin Topper
+  </h1>
+  <button class="jason"> Go Bills </button>
+  <button class="hammer"> Bills Stink </button>
+  <div id="img">
+    <img src="bills.png" style="width:60%;">
   </div>
-    <script>
+</div>
+<script>
+  $("#img").hide();
+  $(document).ready(function() {
+    $(".jason").click(function() {
+      $("#img").show();
+    });
+  });
+
+  $(document).ready(function() {
+    $(".hammer").click(function() {
       $("#img").hide();
-      $(document).ready(function(){
-        $(".jason").click(function(){
-          $("#img").show();
-        });
-      });
+    });
+  });
+</script>
+<style>
+  html {
+    text-align: center;
+  }
 
-      $(document).ready(function(){
-        $(".hammer").click(function(){
-          $("#img").hide();
-        });
-      });
+  .jason {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
-    </script>
-    <style>
-    *
-    {
-    text-align: center !important;
-    margin: auto !important;
-    }
-    .jason {
-      background-color: #008CBA;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    .hammer {
-      background-color: #ff0000;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      cursor: pointer;
-    }
+  .hammer {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
-    body {
-    	width: 100wh;
-    	height: 90vh;
-    	color: #fff;
-    	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-    	background-size: 400% 400%;
-    	-webkit-animation: Gradient 15s ease infinite;
-    	-moz-animation: Gradient 15s ease infinite;
-    	animation: Gradient 15s ease infinite;
+  body {
+    width: 100wh;
+    height: 90vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+  }
+
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 50%
     }
 
-    @-webkit-keyframes Gradient {
-    	0% {
-    		background-position: 0% 50%
-    	}
-    	50% {
-    		background-position: 100% 50%
-    	}
-    	100% {
-    		background-position: 0% 50%
-    	}
+    50% {
+      background-position: 100% 50%
     }
 
-    @-moz-keyframes Gradient {
-    	0% {
-    		background-position: 0% 50%
-    	}
-    	50% {
-    		background-position: 100% 50%
-    	}
-    	100% {
-    		background-position: 0% 50%
-    	}
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @-moz-keyframes Gradient {
+    0% {
+      background-position: 0% 50%
     }
 
-    @keyframes Gradient {
-    	0% {
-    		background-position: 0% 50%
-    	}
-    	50% {
-    		background-position: 100% 50%
-    	}
-    	100% {
-    		background-position: 0% 50%
-    	}
+    50% {
+      background-position: 100% 50%
     }
 
-    </style>
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+
+    50% {
+      background-position: 100% 50%
+    }
+
+    100% {
+      background-position: 0% 50%
+    }
+  }
+</style>
 
 </html>
