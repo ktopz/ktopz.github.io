@@ -1,114 +1,114 @@
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div id="wrapper">
-  <header>
-    <title> Kevin Topper</title>
-  </header>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <h1>
-    Kevin Topper
-  </h1>
-  <button class="jason"> Go Bills </button>
-  <button class="hammer"> Bills Stink </button>
-  <div id="img">
-    <img src="bills.png" style="width:60%;">
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet'>
+  </head>
+<body>
+  <div id = "background">
+    <img id="img" src="" style="width: 100%; opacity:0;">
   </div>
-</div>
+  <div class="text">
+    <h1 id = "title"><strong>Kevin Topper</strong></h3>
+    <p id = "sub">Computer Science Student</p>
+    <p id = "sub">University at Buffalo</p>
+    <p id = "sub">kevintop@buffalo.edu</p>
+    <div id="icons">
+      <a href="https://github.com/ktopz" target="_blank">
+        <i class="fab fa-github" style="font-size:48px; color:white; margin-left: 10x; margin-right: 10px;"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/kevintop/" target="_blank">
+        <i class="fab fa-linkedin" style="font-size:50px; color:white; margin-right: 10px;"></i>
+      </a>
+      <a href="Resume.pdf" target="_blank">
+        <i class="fas fa-file" style="font-size:48px; color:white; margin-right: 10px;"></i>
+      </a>
+    </div>
+  </div>
+</body>
+
 <script>
-  $("#img").hide();
-  $(document).ready(function() {
-    $(".jason").click(function() {
-      $("#img").show();
-    });
-  });
 
-  $(document).ready(function() {
-    $(".hammer").click(function() {
-      $("#img").hide();
-    });
-  });
 </script>
+
 <style>
-  html {
-    text-align: center;
-  }
+#icons {
+  padding-top: 8px;
+}
+#title {
+  font-size: 60px;
+  margin-bottom:-0.15em;
+}
+#sub {
+  font-size: 20px;
+  margin-bottom:0.2em;
+  margin-top:0em;
+}
+.text {
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: 'Cambay';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  .jason {
-    background-color: #008CBA;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-  }
+#background {
+  -webkit-transform:translate3d(0,0,0);
+  box-shadow: inset 0px 0px 200px 150px rgba(0,91,187,1.3);
+  max-width: 1080px;
+  margin: 0 auto;
+  background: skyblue;
+  opacity:0.75;
+  animation: fadein 10s, fader 80s cubic-bezier(.9,0,0,.9) infinite, zoominoutsinglefeatured 80s infinite;
+}
 
-  .hammer {
-    background-color: #ff0000;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-  }
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
-  body {
-    width: 100wh;
-    height: 90vh;
-    color: #fff;
-    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-    background-size: 400% 400%;
-    -webkit-animation: Gradient 15s ease infinite;
-    -moz-animation: Gradient 15s ease infinite;
-    animation: Gradient 15s ease infinite;
-  }
+@keyframes zoominoutsinglefeatured {
+  0% { transform: scale(1.1, 1.1); }
+  11.1% { transform: scale(1.0, 1.0); }
+  22.2% { transform: scale(1.05, 1.05); }
+  33.3% { transform: scale(1.0, 1.0); }
+  44.4% { transform: scale(1.05, 1.05); }
+  55.5% { transform: scale(1.0, 1.0); }
+  66.6% { transform: scale(1.05, 1.05); }
+  77.7% { transform: scale(1.0, 1.0); }
+  88.8% { transform: scale(1.05, 1.05); }
+  100% {transform: scale(1.05,1.05);}
+}
 
-  @-webkit-keyframes Gradient {
-    0% {
-      background-position: 0% 50%
-    }
+@keyframes fader {
+  0% {background-image: url("images/plain.JPG"), url("images/img2.JPG"); background-size: cover;}
+  11.1% {background-image: url("images/img2.JPG"), url("images/img8.JPG"); background-size: cover;}
+  22.2% {background-image: url("images/img8.JPG"), url("images/img3.JPG"); background-size: cover;}
+  33.3% {background-image: url("images/img3.JPG"), url("images/img7.JPG"); background-size: cover;}
+  44.4% {background-image: url("images/img7.JPG"), url("images/img5.JPG"); background-size: cover;}
+  55.5% {background-image: url("images/img5.JPG"), url("images/img6.JPG"); background-size: cover;}
+  66.6% {background-image: url("images/img6.JPG"), url("images/img1.JPG"); background-size: cover;}
+  77.7% {background-image: url("images/img1.JPG"), url("images/img4.JPG"); background-size: cover;}
+  88.8% {background-image: url("images/img2.JPG"), url("images/plain.JPG"); background-size: cover;}
+  100% {background-image: url("images/plain.JPG"); background-size: cover;}
+}
 
-    50% {
-      background-position: 100% 50%
-    }
+*{
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0, 0, 0);
 
-    100% {
-      background-position: 0% 50%
-    }
-  }
+}
 
-  @-moz-keyframes Gradient {
-    0% {
-      background-position: 0% 50%
-    }
-
-    50% {
-      background-position: 100% 50%
-    }
-
-    100% {
-      background-position: 0% 50%
-    }
-  }
-
-  @keyframes Gradient {
-    0% {
-      background-position: 0% 50%
-    }
-
-    50% {
-      background-position: 100% 50%
-    }
-
-    100% {
-      background-position: 0% 50%
-    }
-  }
-</style>
-
-</html>
+html {
+  animation: fadein 5s;
+  text-align: center;
+  background-size: 100% 100%;
+  background-color: #005bbb;
+  overflow: hidden;
+}
+</style></html>
